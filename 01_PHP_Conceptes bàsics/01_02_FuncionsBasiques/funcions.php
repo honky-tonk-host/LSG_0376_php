@@ -76,3 +76,146 @@ echo "Mínim: " . $estadistiques["minim"] . "<br>";
 echo "<h3>6. Funció amb tipus definits:</h3>";
 echo "Multiplicar 4 * 7 = " . multiplicar(4, 7) . "<br>";
 ?>
+
+<?php
+ function multiplicar($a) {
+          echo $a*3 . "\n";
+      } multiplicar(fgets(STDIN));
+      ?>
+
+      ❯ <?php
+  function sumar() {
+  $a = (fgets(STDIN));
+  $b = (fgets(STDIN));
+      echo $a + $b . "\n";
+  }
+
+  sumar();
+
+
+<?php
+  function triangle() {
+  $a = (fgets(STDIN));
+  $b = (fgets(STDIN));
+      
+      
+      echo number_format(($a * $b)/2, 1, '.', '') . "\n";
+  }
+
+  triangle();
+
+  <?php
+ function cuadrado($a) {
+          echo $a*$a . "\n";
+      } cuadrado(fgets(STDIN));
+      ?>
+
+
+<?php
+  function amber() {
+  $a = (fgets(STDIN));
+  $b = (fgets(STDIN));
+      echo $a . " amb "  . $b . "\n";
+  }
+
+  amber();
+
+  <?php
+  function sweetycalc() {
+  $a = (fgets(STDIN));
+  $b = (fgets(STDIN));
+        if (floor($a / $b) == $a / $b)
+            echo "0\n";
+        else
+            echo ($a - $b * floor($a / $b)) . "\n";
+     
+  }
+
+  <?php
+  function zeldaDiaCalc($a) {
+
+  $x = floor($a / 43200);
+
+    if($x % 2 == 1)
+        echo "nit del dia " . floor(($x / 2)+1) . "\n";
+    else    
+        echo "mati del dia " . floor(($x / 2) +1) . "\n";
+
+  }
+
+  zeldaDiaCalc(fgets(STDIN));
+
+  sweetycalc();
+
+
+  Si es diu "Coratge", dirà "Gryffindor"
+Si es diu "Coneixement", dirà "Ravenclaw"
+Si es diu "Ambicio", dirà "Slytherin"
+Si es diu qualsevol altra cosa, dirà "Hufflepuff"
+
+<?php
+ function houseHog($a) {
+            if ($a == "Coratge")
+                echo "Gryffindor\n";
+            else if ($a == "Coneixement")
+                echo "Ravenclaw\n";
+            else if ($a == "Ambicio")
+                echo "Slytherin\n";
+            else
+                echo "Hufflepuff\n";
+      } houseHog(trim(fgets(STDIN)));
+      ?>
+
+      Entrada	Sortida
+1	1
+32	2
+62	3
+364	12
+
+<?php
+ function monthCalc($a) {
+            if (0 < $a && $a < 32)
+                echo "1\n";
+            else if (32 <= $a && $a < 60)
+                echo "2\n";
+            else if (60 <= $a && $a < 91)
+                echo "3\n";
+            else if (91 <= $a && $a < 121)
+                echo "4\n";
+            else if (121 <= $a && $a < 152)
+                echo "5\n";
+            else if (152 <= $a && $a < 182)
+                echo "6\n";
+            else if (182 <= $a && $a < 213)
+                echo "7\n";
+            else if (213 <= $a && $a < 244)
+                echo "8\n";
+            else if (244 <= $a && $a < 274)
+                echo "9\n";
+            else if (274 <= $a && $a < 305)
+                echo "10\n";
+            else if (305 <= $a && $a < 335)
+                echo "11\n";
+            else if (335 <= $a && $a < 366)
+                echo "12\n";
+      } monthCalc(trim(fgets(STDIN)));
+      ?>
+Entrada	Sortida
+1	1
+32	2
+62	3
+364	12
+
+<?php
+ function monthCalc($a) {
+            if (0 < $a && $a < 32)
+                echo "1\n";
+            else if (32 <= $a && $a < 60)
+                echo "2\n";
+            else if (60 <= $a && $a < 91)
+                echo "3\n";
+            else if (91 <= $a && $a < 121)
+                echo "4\n";
+            else if (121 <= $a && $a < 152)
+                echo "5\n";
+            else if (152 <= $a && $a < 

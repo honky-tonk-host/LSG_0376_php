@@ -6,8 +6,8 @@
  */
 
 // Variables de tipus String (cadena de text)
-$nom = "Joan";
-$cognom = 'Garcia';
+$animal = "Gat";
+$typo = 'Mammal';
 
 // Variables de tipus Integer (números enters)
 $edat = 25;
@@ -30,8 +30,8 @@ echo "<h2>Exemple de Variables i Tipus en PHP</h2>";
 echo "<hr>";
 
 echo "<h3>Variables de tipus String:</h3>";
-echo "Nom: " . $nom . "<br>";
-echo "Cognom: " . $cognom . "<br>";
+echo "Animal: " . $animal . "<br>";
+echo "Type: " . $typo . "<br>";
 
 echo "<h3>Variables de tipus Integer:</h3>";
 echo "Edat: " . $edat . " anys<br>";
