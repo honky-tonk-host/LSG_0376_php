@@ -33,12 +33,12 @@ echo "ucwords(): " . ucwords("hola món php") . "<br>";
 
 // 4. Cercar dins d'un string
 echo "<h3>4. Cercar dins d'un string:</h3>";
-$frase = "PHP és un llenguatge de programació";
+$frase = " és un llenguatge PHP string de programació";
 echo "Frase: '" . $frase . "'<br>";
 echo "strpos('programació'): " . strpos($frase, "programació") . "<br>";
 
-if (str_contains($frase, "PHP")) {
-    echo "str_contains('PHP'): La frase conté 'PHP'<br>";
+if (str_contains($frase, "string")) {
+    echo "str_contains('string'): La frase conté 'string'<br>";
 }
 
 // 5. Reemplaçar text
@@ -75,13 +75,13 @@ echo "<h3>9. Format de strings (sprintf):</h3>";
 $nom = "Maria";
 $punts = 1523.456;
 echo "sprintf('Hola %s, tens %.2f punts', \$nom, \$punts):<br>";
-echo sprintf("Hola %s, tens %.2f punts", $nom, $punts) . "<br>";
+echo sprintf("Hola %s, tens %.1f punts", $nom, $punts) . "<br>";
 
 // 10. Validació de strings
 echo "<h3>10. Validació de strings:</h3>";
 $test1 = "12345";
-$test2 = "12abc";
-$test3 = "";
+$test2 = "eee";
+$test3 = "hhh";
 
 echo "ctype_digit('$test1'): " . (ctype_digit($test1) ? "Sí" : "No") . "<br>";
 echo "ctype_digit('$test2'): " . (ctype_digit($test2) ? "Sí" : "No") . "<br>";
@@ -93,6 +93,8 @@ $email_test = "usuari@domini.com";
 $patro = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
 if (preg_match($patro, $email_test)) {
     echo "'" . $email_test . "' és un email vàlid<br>";
+} else {
+    echo "'" . $email_test . "' NO és un email vàlid<br>";
 }
 
 // 12. Seguretat: escapar HTML

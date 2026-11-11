@@ -30,7 +30,7 @@ if ($nota >= 5) {
 
 // 3. Condicional amb elseif (múltiples condicions)
 echo "<h3>3. Condicional If-Elseif-Else:</h3>";
-$puntuacio = 85;
+$puntuacio = 50;
 echo "Puntuació: " . $puntuacio . "<br>";
 
 if ($puntuacio >= 90) {
@@ -73,8 +73,8 @@ echo "Estat: " . $estat . "<br>";
 
 // 6. Operadors lògics en condicionals
 echo "<h3>6. Operadors Lògics (AND, OR, NOT):</h3>";
-$te_carnet = true;
-$te_cotxe = false;
+$te_carnet = false;
+$te_cotxe = true;
 echo "Té carnet: " . ($te_carnet ? "Sí" : "No") . "<br>";
 echo "Té cotxe: " . ($te_cotxe ? "Sí" : "No") . "<br>";
 
